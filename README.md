@@ -24,14 +24,14 @@ This API allows users to manage a list of tasks with persistent storage in a MyS
 ## Project Structure
 ```
 todo-list-app/
-├── server.js               # Entry point, starts the Express server
+├── server.js                # Entry point, starts the Express server
 ├── db.js                    # MySQL connection pool setup
 ├── routes/
 │   └── taskRoutes.js        # API endpoint definitions
 ├── controllers/
 │   └── taskController.js    # CRUD logic for tasks
-├── .env                      # Database credentials (not uploaded to GitHub)
-└── .gitignore                # Files/folders excluded from GitHub
+├── .env                     # Database credentials (not uploaded to GitHub)
+└── .gitignore               # Files/folders excluded from GitHub
 ```
 
 ## Database Schema
