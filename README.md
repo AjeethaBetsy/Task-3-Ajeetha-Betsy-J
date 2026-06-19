@@ -22,6 +22,7 @@ This API allows users to manage a list of tasks with persistent storage in a MyS
 - dotenv (for environment variable management)
 
 ## Project Structure
+```
 todo-list-app/
 ├── server.js               # Entry point, starts the Express server
 ├── db.js                    # MySQL connection pool setup
@@ -31,6 +32,8 @@ todo-list-app/
 │   └── taskController.js    # CRUD logic for tasks
 ├── .env                      # Database credentials (not uploaded to GitHub)
 └── .gitignore                # Files/folders excluded from GitHub
+```
+
 ## Database Schema
 
 **Table: tasks**
