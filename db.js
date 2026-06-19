@@ -4,7 +4,7 @@
 // multiple requests at the same time without crashing the server.
 
 const mysql = require('mysql2');
-require('dotenv').config(); // loads the values from our .env file
+require('dotenv').config({ quiet: true }); // loads the values from our .env file
 
 const taskDatabasePool = mysql.createPool({
     host: process.env.DB_HOST,
