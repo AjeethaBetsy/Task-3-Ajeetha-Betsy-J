@@ -70,6 +70,7 @@ CREATE TABLE tasks (
     is_completed BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 ## API Endpoints
 
