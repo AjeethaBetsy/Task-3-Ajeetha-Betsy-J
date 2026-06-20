@@ -70,7 +70,9 @@ CREATE TABLE tasks (
     is_completed BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
- ## API Endpoints
+
+4
+## API Endpoints
 
 | Method | Endpoint | Description | Success Status |
 |--------|----------|--------------|-----------------|
@@ -80,7 +82,7 @@ CREATE TABLE tasks (
 | PUT | /api/tasks/:id | Update a task by ID | 200 OK |
 | DELETE | /api/tasks/:id | Delete a task by ID | 200 OK |
 
- ## HTTP Status Codes Used
+## HTTP Status Codes Used
 
 | Code | Meaning |
 |------|---------|
@@ -113,13 +115,13 @@ node server.js
 
 # 6. Test endpoints using Postman at http://localhost:5000/api/tasks
 
-Security Measures
+## Security Measures
 SQL Injection Prevention — every database query uses parameterized placeholders (?) instead of string concatenation, ensuring user input is never executed as SQL code.
 Input Validation — the API rejects empty or missing task titles with a 400 Bad Request before reaching the database.
 Schema-Level Integrity — the title column is enforced as NOT NULL directly in MySQL, so invalid data cannot be inserted even if application-level checks are bypassed.
 Credential Isolation — database credentials are stored in .env and excluded from version control via .gitignore, preventing accidental exposure.
 
-Screenshots
+## Screenshots
 Testing and verification screenshots are available in /To-Do-List-API-Screenshots, covering server startup, database schema verification, and all CRUD operations.
 
 ## Dependencies
@@ -130,6 +132,6 @@ Testing and verification screenshots are available in /To-Do-List-API-Screenshot
 | mysql2 | MySQL database driver (Promise-based) |
 | dotenv | Loads environment variables from `.env` |
 
-Author
+## Author
 Ajeetha Betsy
 Full Stack Development Internship — DecodeLabs
