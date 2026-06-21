@@ -121,9 +121,15 @@ CREATE TABLE tasks (
 
 Testing and verification screenshots are available in the To-Do-List-API-Screenshots folder, covering server startup, database schema verification, and all CRUD operations.
 
+**1. Server Running**
+
+
+
 ![Server Running](To-Do-List-API-Screenshots/01-server-running.png)
 
 
+
+**2. Database Schema**
 
 
 
@@ -131,11 +137,15 @@ Testing and verification screenshots are available in the To-Do-List-API-Screens
 
 
 
+**3. Create Task (POST)**
+
 
 
 ![Create Task](To-Do-List-API-Screenshots/03-create-task.png)
 
 
+
+**4. Get All Tasks (GET)**
 
 
 
@@ -143,11 +153,15 @@ Testing and verification screenshots are available in the To-Do-List-API-Screens
 
 
 
+**5. Update Task (PUT)**
+
 
 
 ![Update Task](To-Do-List-API-Screenshots/05-update-task.png)
 
 
+
+**6. Delete Task (DELETE)**
 
 
 
@@ -155,11 +169,15 @@ Testing and verification screenshots are available in the To-Do-List-API-Screens
 
 
 
+**7. Verify Deletion**
+
 
 
 ![Verify Deletion](To-Do-List-API-Screenshots/07-verify-deletion.png)
 
 
+
+**8. GitHub Repository**
 
 
 
