@@ -1,16 +1,16 @@
-# To-Do List API
+# 📝 To-Do List API
 
 A RESTful backend API built with **Node.js**, **Express**, and **MySQL**, developed as part of the Full Stack Development Industrial Training Kit — **Project 3: Database Integration**.
 
 ---
 
-## Project Objective
+## 🎯 Project Objective
 
 This project demonstrates the ability to design a relational database schema, connect a Node.js backend to MySQL, and implement complete CRUD (Create, Read, Update, Delete) functionality through a RESTful API — while applying secure coding practices such as parameterized queries and input validation.
 
 ---
 
-## Features
+## 🚀 Features
 
 - Create new tasks with title validation
 - Retrieve all tasks or a single task by ID
@@ -22,7 +22,7 @@ This project demonstrates the ability to design a relational database schema, co
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -34,7 +34,7 @@ This project demonstrates the ability to design a relational database schema, co
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 ```
 todo-list-app/
 ├── server.js                     # Entry point, starts the Express server
@@ -50,7 +50,23 @@ todo-list-app/
 
 ---
 
-## Database Schema
+## Installation and Setup
+
+1. Clone this repository
+2. Run npm install to install dependencies
+3. Create a .env file in the root directory with your database credentials:
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=todo_app
+DB_PORT=3306
+4. Create the tasks table in MySQL using the schema above
+5. Run node server.js
+6. Test endpoints using Postman at http://localhost:5000/api/tasks
+
+---
+
+## 🗄 Database Schema
 
 **Table: `tasks`**
 
@@ -72,7 +88,7 @@ CREATE TABLE tasks (
 );
 ```
 
-## API Endpoints
+## 📌 API Endpoints
 
 | Method | Endpoint | Description | Success Status |
 |--------|----------|--------------|-----------------|
@@ -82,7 +98,7 @@ CREATE TABLE tasks (
 | PUT | /api/tasks/:id | Update a task by ID | 200 OK |
 | DELETE | /api/tasks/:id | Delete a task by ID | 200 OK |
 
-## HTTP Status Codes Used
+## 📤 HTTP Status Codes Used
 
 | Code | Meaning |
 |------|---------|
@@ -92,32 +108,20 @@ CREATE TABLE tasks (
 | 404 | Task not found |
 | 500 | Server or database error |
 
-## Installation and Setup
 
-1. Clone this repository
-2. Run npm install to install dependencies
-3. Create a .env file in the root directory with your database credentials:
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=todo_app
-DB_PORT=3306
-4. Create the tasks table in MySQL using the schema above
-5. Run node server.js
-6. Test endpoints using Postman at http://localhost:5000/api/tasks
 
-## Security Measures
+## 🔒 Security Measures
 
 - SQL Injection Prevention: every database query uses parameterized placeholders instead of string concatenation, ensuring user input is never executed as SQL code
 - Input Validation: the API rejects empty or missing task titles with a 400 Bad Request before reaching the database
 - Schema-Level Integrity: the title column is enforced as NOT NULL directly in MySQL
 - Credential Isolation: database credentials are stored in .env and excluded from version control via .gitignore
 
-## Screenshots
+## 📸 Screenshots
 
 Testing and verification screenshots are available in the To-Do-List-API-Screenshots folder, covering server startup, database schema verification, and all CRUD operations.
 
-## Dependencies
+## 📦 Dependencies
 
 | Package | Purpose |
 |---------|---------|
@@ -125,7 +129,7 @@ Testing and verification screenshots are available in the To-Do-List-API-Screens
 | mysql2 | MySQL database driver with Promise support |
 | dotenv | Loads environment variables from .env |
 
-## Future Enhancements
+## 🚧 Future Enhancements
 
 - Add user authentication so tasks are scoped per user
 - Add due dates and priority levels for tasks
@@ -133,7 +137,6 @@ Testing and verification screenshots are available in the To-Do-List-API-Screens
 - Write automated tests for each endpoint
 - Deploy to a cloud platform with a managed MySQL instance
 
-## Author
+## 👩‍💻 Author
 
-Ajeetha Betsy
-Full Stack Development Internship, DecodeLabs
+**Ajeetha Betsy**
