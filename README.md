@@ -50,7 +50,7 @@ todo-list-app/
 
 ---
 
-## Installation and Setup
+## ⚙️ Installation and Setup
 
 1. Clone this repository
 2. Run npm install to install dependencies
