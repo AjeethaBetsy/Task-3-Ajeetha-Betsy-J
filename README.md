@@ -62,7 +62,7 @@ DB_NAME=todo_app
 DB_PORT=3306
 4. Create the tasks table in MySQL using the schema above
 5. Run node server.js
-6. Test endpoints using Postman at http://localhost:5000/api/tasks
+6. Test endpoints using Postman 
 
 ---
 
